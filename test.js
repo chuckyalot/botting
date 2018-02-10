@@ -1,6 +1,6 @@
 const { RtmClient, CLIENT_EVENTS, WebClient } = require('@slack/client');
 
-const token = 'xoxb-309998092262-BzZPJ0ZKVuWRQ4bhMDOkZ8bQ';
+const token = 'xoxb-309998092262-sNUs8PQVpegr6LhYduexLk7t';
 
 const rtm = new RtmClient(token, {
   dataStore: false,
@@ -38,3 +38,8 @@ rtm.on(CLIENT_EVENTS.RTM.RTM_CONNECTION_OPENED, () => {
 
 // Start the connecting process
 rtm.start(no_latest=1);
+
+setTimeout(function() {
+    console.log('auto shutdown');
+	process.exit();
+}, 8000);

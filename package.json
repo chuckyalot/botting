@@ -2,8 +2,9 @@
   "name": "bot",
   "version": "1.0.0",
   "description": "tutorial",
-  "main": "index.js",
+  "main": "test.js",
   "scripts": {
+    "start": "node test.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
